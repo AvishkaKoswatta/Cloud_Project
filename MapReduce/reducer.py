@@ -12,11 +12,20 @@ for line in sys.stdin:
     try:
         category, word, rating = line.split('\t')
         rating = float(rating)
-        key = f"{category}\t{word}"
-        scores[key].append(rating)
+        scores[(category, word)].append(rating)
     except:
         continue
 
-for key, rating_list in scores.items():
+category_groups = defaultdict(list)
+
+for (category, word), rating_list in scores.items():
     avg = sum(rating_list) / len(rating_list)
-    print(f"{key}\t{avg:.2f}")
+    category_groups[category].append((word, avg))
+
+for category in sorted(category_groups.keys()):
+    
+    reverse = True if category == "positive" else False
+    sorted_items = sorted(category_groups[category], key=lambda x: x[1], reverse=reverse)
+    
+    for word, avg in sorted_items:
+        print(f"{category}\t{word}\t{avg:.2f}")
