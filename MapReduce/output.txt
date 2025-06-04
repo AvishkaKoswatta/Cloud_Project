@@ -1,20 +1,20 @@
-negative	worst	1.23
-negative	terrible	1.32
-negative	waste	1.37
-negative	poor	1.49
-negative	crash	1.71
-negative	buggy	1.87
-negative	bad	1.91
-negative	hate	2.03
-negative	boring	2.41
-negative	slow	2.54
-positive	amazing	4.55
-positive	excellent	4.50
-positive	awesome	4.49
-positive	love	4.38
-positive	fun	4.36
-positive	cool	4.12
-positive	perfect	4.06
-positive	great	4.04
-positive	nice	3.98
-positive	good	3.49
+negative  		worst     		1.23		2261
+negative  		terrible  		1.32		1145
+negative  		waste     		1.37		1253
+negative  		poor      		1.49		908
+negative  		crash     		1.71		1135
+negative  		buggy     		1.87		258
+negative  		bad       		1.91		3222
+negative  		hate      		2.03		1477
+negative  		boring    		2.41		533
+negative  		slow      		2.54		794
+positive  		amazing   		4.55		3524
+positive  		excellent 		4.50		759
+positive  		awesome   		4.49		1890
+positive  		love      		4.38		13005
+positive  		fun       		4.36		899
+positive  		cool      		4.12		994
+positive  		perfect   		4.06		836
+positive  		great     		4.04		10841
+positive  		nice      		3.98		2378
+positive  		good      		3.49		17596
