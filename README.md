@@ -11,7 +11,7 @@ https://www.kaggle.com/datasets/ashishkumarak/netflix-reviews-playstore-daily-up
 `clean_reviews.txt`
 
 ## Format: 
-<sentiment> <word> <rating>
+`<sentiment> <word> <rating>`
 
 ```bash
 ## Start Hadoop
