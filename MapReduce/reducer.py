@@ -28,4 +28,6 @@ for category in sorted(category_groups.keys()):
     sorted_items = sorted(category_groups[category], key=lambda x: x[1], reverse=reverse)
     
     for word, avg in sorted_items:
-        print(f"{category}\t{word}\t{avg:.2f}")
+        print(f"{category}\t{word}\t\t{avg:.2f}")
+
+
