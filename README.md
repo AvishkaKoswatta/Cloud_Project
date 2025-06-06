@@ -10,8 +10,8 @@ https://www.kaggle.com/datasets/ashishkumarak/netflix-reviews-playstore-daily-up
 ## Input File: 
 `clean_reviews.txt`
 
-## Format: 
-`<sentiment> <word> <rating>`
+## Output Format: 
+`<sentiment> <word> <rating> <Count>`
 
 ```bash
 ## Start Hadoop
@@ -23,7 +23,7 @@ hdfs namenode -format
 
 ## Upload Input File to HDFS
 hadoop fs -mkdir -p /input
-hadoop fs -put /home/avishka/Cloud/Project/Data/clean_reviews.txt /input/
+hadoop fs -put ./clean_reviews.txt /input/
 
 ## Remove output
 hdfs dfs -rm -r /output/review_analysis
@@ -43,7 +43,7 @@ hdfs dfs -ls /output/review_analysis
 hdfs dfs -cat /output/review_analysis/part-00000 | less
 
 # Save as txt
-hdfs dfs -cat /output/review_analysis/part-00000 > /home/path/to/save
+hdfs dfs -cat /output/review_analysis/part-00000 > ./review_analysis_results.txt
 
 ## Stop Hadoop
 $HADOOP_HOME/sbin/stop-dfs.sh
